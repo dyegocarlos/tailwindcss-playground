@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbartop {
+    @apply flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10 top-0;
+  }
+}
+
+.w-10percent {
+  width: 10%;
+}
+
+.h-62vh {
+  height: 62vh;
+}
+
+.h-54vh {
+  height: 54vh;
+}
+
+.text-6xl {
+  font-size: 6rem;
+}
+.text-9xl {
+  font-size: 18rem;
+  line-height: 1;
+}
+
+ul.parlamentares li:nth-child(4n + 1) {
+  background: #6666;
+}
+ul.parlamentares li:nth-child(4n + 0) {
+  background: #6666;
+}
+
+.voto {
+  visibility: hidden;
+}
+ul.votacao-parlamentares .voto {
+  visibility: visible;
+}
+
+ul.presenca-parlamentares li:nth-child(3n + 1),
+ul.votacao-parlamentares li:nth-child(3n + 1),
+ul.presenca-parlamentares li.presente,
+ul.votacao-parlamentares li.sim {
+  background: #149d6399;
+}
+ul.presenca-parlamentares li:nth-child(3n),
+li.ausente {
+  color: #ffa50099;
+}
+
+ul.votacao-parlamentares li:nth-child(3n),
+.abstencao {
+  background: #ffa50099;
+}
+ul.votacao-parlamentares li:nth-child(3n + 2),
+.nao {
+  background: #e6004799;
+}
+
+.piscar {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

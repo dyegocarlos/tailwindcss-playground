@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="/build/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Composição da Mesa</title>
+  </head>
+  <body
+    class="antialiased font-montserrat h-screen"
+    style="background-image: url('img/bgpainel.jpg'); background-size: cover"
+  >
+    <div class="relative mx-auto h-screen">
+      <div
+        class="flex flex-col max-h-screen xl:flex-row 2xl:p-8 overflow-hidden"
+      >
+        <div
+          class="
+            flex flex-col flex-grow
+            text-primary-100
+            xl:shadow-2xl xl:rounded-xl
+            overflow-hidden
+            h-screen
+          "
+        >
+          <header class="flex items-center border-b pb-1 2xl:pb-5">
+            <img
+              class="inline w-10percent 2xl:w-auto"
+              src="img/brasao-cidade.png"
+            />
+            <h1 class="2xl:text-5xl xl:text-3xl text-base">
+              22ª Sessão Ordinária do 2º Período da 1ª Sessão Legislativa da 27ª
+              Legislatura
+            </h1>
+          </header>
+          <div class="hidden md:flex justify-between">
+            <h2 class="2xl:text-5xl text-base font-bold xl:m-5 m-2">
+              REQUERIMENTO Nº 53/2021
+            </h2>
+            <h4
+              class="
+                2xl:text-4xl
+                text-base
+                font-bold
+                xl:m-5
+                m-1
+                bg-blue-700
+                xl:p-5
+                p-2
+              "
+            >
+              A FAVOR DA MATÉRIA
+            </h4>
+          </div>
+          <div class="flex md:hidden xl:m-5 m-2 text-center">
+            <h1 class="2xl:text-5xl xl:text-3xl text-base">
+              Gire o celular para acompanhar a sessão
+              <img src="img/rotate.gif" />
+            </h1>
+          </div>
+          <div class="hidden md:flex h-62vh items-center">
+            <div
+              class="flex w-1/4 xl:1/3 items-center flex-col xl:m-5 m-2 ml-5"
+            >
+              <img
+                class="rounded-full xl:w-full w-1/2"
+                src="img/vereador-square.png"
+              />
+            </div>
+
+            <div
+              class="
+                w-3/4
+                xl:w-2/3
+                flex flex-wrap flex-row
+                items-center
+                xl:m-5
+                m-2
+                ml-5
+                overflow-y-auto
+                h-48
+                xl:h-full
+              "
+            >
+              <div class="flex w-full">
+                <div class="flex flex-col xl:m-5 m-2 flex-grow-0">
+                  <p class="xl:text-4xl text-sm mt-5">
+                    <span class="block">Orador</span>
+                    <span class="font-bold inline whitespace-nowrap"
+                      >CLÁUDIO NASCIMENTO</span
+                    >
+                    <span class="ml-5">PDT</span>
+                  </p>
+                  <!-- quando faltar menos de um minuto, adicionar a classe text-red-600 ao span abaixo -->
+                  <!-- quando estiver pausado, adicionar a classe piscar ao span abaixo e carregar o span seguinte  -->
+                  <span
+                    class="
+                      xl:text-9xl
+                      text-7xl
+                      leading-none
+                      piscar
+                      text-red-600
+                    "
+                    >04:52</span
+                  >
+                  <span class="font-bold xl:text-6xl text-yellow-600"
+                    >PAUSADO</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="text-gray-600 flex items-center border-t pt-2">
+            <div class="flex items-center border-r pr-5 2xl:ml-0 ml-5">
+              <div>
+                <span
+                  class="
+                    xl:leading-5
+                    leading-3
+                    font-bold
+                    block
+                    2xl:text-2xl
+                    text-base
+                    tracking-widest
+                  "
+                  >08</span
+                >
+                <span
+                  class="
+                    2xl:leading-4
+                    leading-1
+                    tracking-widest
+                    2xl:text-base
+                    text-xs
+                  "
+                  >SET</span
+                >
+              </div>
+              <span class="2xl:text-5xl text-base pl-5">16:02</span>
+            </div>
+            <div class="flex flex-1 items-center">
+              <span class="2xl:text-5xl text-base pl-5 pr-5">00:02</span>
+              <div
+                class="
+                  progress-bar
+                  w-1/2
+                  2xl:h-8
+                  h-4
+                  bg-gray-800
+                  flex
+                  rounded-xl
+                "
+              >
+                <div class="bg-primary-700 m-1 w-1/3 rounded-xl"></div>
+              </div>
+              <span class="2xl:text-5xl text-base pl-5">-00:58</span>
+            </div>
+            <a href="" class="flex w-8 2xl:w-48 justify-end">
+              <img class="" src="img/intgest.png" />
+            </a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
